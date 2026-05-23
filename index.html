@@ -129,38 +129,17 @@ button:active{
 
 <script>
 
-(function(){
+const TARGET_URL =
+"https://accumulatecarefullysuction.com/cRP2/aYzfqdTNO1ImtZ5/D9Ws6jA37YGYL8/CVrP/5mqB8S9_VeD/utiqJz56D/eIusYsCDyyFt/jFMDiRv8aIxUxJ1D/i9fHzabLGUIf/Rol90TbJkpzQ61-/Z7DIn6E/lrUOPLr2Ev";
 
-  const TARGET_URL =
-  "https://accumulatecarefullysuction.com/cRP2/aYzfqdTNO1ImtZ5/D9Ws6jA37YGYL8/CVrP/5mqB8S9_VeD/utiqJz56D/eIusYsCDyyFt/jFMDiRv8aIxUxJ1D/i9fHzabLGUIf/Rol90TbJkpzQ61-/Z7DIn6E/lrUOPLr2Ev";
+document.getElementById('playBtn')
+.addEventListener('click', function(){
 
-  const btn = document.getElementById('playBtn');
+    window.location.href = TARGET_URL;
 
-  const loading = document.getElementById('loading');
-
-  let clicked = false;
-
-  btn.addEventListener('click', function(){
-
-    if(clicked) return;
-
-    clicked = true;
-
-    loading.style.display = 'block';
-
-    btn.disabled = true;
-
-    setTimeout(function(){
-
-      window.location.href = TARGET_URL;
-
-    }, 1800);
-
-  });
-
-})();
+});
 
 </script>
-
+  
 </body>
 </html>
