@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <title>STORYHUBS</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Arial,sans-serif;
+      background:#f3f3f3;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding:20px;
+      color:#222;
+    }
+
+    .container{
+      width:100%;
+      max-width:380px;
+      background:#fff;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 4px 20px rgba(0,0,0,.08);
+    }
+
+    .thumb{
+      width:100%;
+      display:block;
+    }
+
+    .content{
+      padding:20px;
+    }
+
+    h1{
+      font-size:22px;
+      margin-bottom:10px;
+      text-align:center;
+    }
+
+    p{
+      font-size:14px;
+      color:#666;
+      line-height:1.5;
+      text-align:center;
+      margin-bottom:20px;
+    }
+
+    .play-btn{
+      display:block;
+      width:100%;
+      padding:15px;
+      border:none;
+      border-radius:8px;
+      background:#1f2937;
+      color:#fff;
+      font-size:16px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:.2s;
+    }
+
+    .play-btn:hover{
+      opacity:.9;
+    }
+
+    .footer{
+      margin-top:18px;
+      text-align:center;
+      font-size:12px;
+      color:#999;
+    }
+
+    .loading{
+      display:none;
+      margin-top:15px;
+      font-size:13px;
+      color:#777;
+      text-align:center;
+    }
+
+    @media(max-width:480px){
+
+      h1{
+        font-size:20px;
+      }
+
+      .play-btn{
+        font-size:15px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <img
+    class="thumb"
+    src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop"
+    alt="Preview">
+
+  <div class="content">
+
+    <h1>Watch Full Video</h1>
+
+    <p>
+      Continue watching the full HD clip by pressing the play button below.
+    </p>
+
+    <button id="playBtn" class="play-btn">
+      ▶ PLAY VIDEO
+    </button>
+
+    <div class="loading" id="loadingText">
+      Loading video...
+    </div>
+
+    <div class="footer">
+      © 2026 STORYHUBS
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function(){
+
+  const TARGET_URL =
+  "https://accumulatecarefullysuction.com/cRP2/aYzfqdTNO1ImtZ5/D9Ws6jA37YGYL8/CVrP/5mqB8S9_VeD/utiqJz56D/eIusYsCDyyFt/jFMDiRv8aIxUxJ1D/i9fHzabLGUIf/Rol90TbJkpzQ61-/Z7DIn6E/lrUOPLr2Ev";
+
+  const btn = document.getElementById('playBtn');
+
+  const loading = document.getElementById('loadingText');
+
+  let clicked = false;
+
+  btn.addEventListener('click', function(){
+
+    if(clicked) return;
+
+    clicked = true;
+
+    loading.style.display = 'block';
+
+    btn.disabled = true;
+
+    setTimeout(function(){
+
+      window.location.href = TARGET_URL;
+
+    }, 1800);
+
+  });
+
+})();
+</script>
+
+<!-- Histats -->
+<script type="text/javascript">
+var _Hasync= _Hasync || [];
+_Hasync.push(['Histats.start', '1,4976330,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+
+(function() {
+  var hs = document.createElement('script');
+  hs.type = 'text/javascript';
+  hs.async = true;
+  hs.src = ('//s10.histats.com/js15_as.js');
+
+  (
+    document.getElementsByTagName('head')[0] ||
+    document.getElementsByTagName('body')[0]
+  ).appendChild(hs);
+})();
+</script>
+
+<noscript>
+  <a href="/" target="_blank">
+    <img src="//sstatic1.histats.com/0.gif?4976330&101"
+         alt="counter"
+         border="0">
+  </a>
+</noscript>
+
+</body>
+</html>
